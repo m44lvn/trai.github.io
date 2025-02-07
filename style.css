@@ -1,0 +1,84 @@
+/* Styling Halaman */
+body {
+    font-family: Helvetica, sans-serif;
+    background: linear-gradient(-45deg, #415800, #e560dc,
+    #ffb374, #ef5f5f, #d840b6);
+    background-size: 400% 400%;
+    animation: bg 12s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+@keyframes bg{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+/* Kotak Form */
+.container {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Input dan Tombol */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #e560dc; /* Warna biru yang lebih lembut */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: linear-gradient(-45deg, #415800, #e560dc,
+    #ffb374, #ef5f5f, #d840b6);
+    background-size: 400% 400%;
+    animation: bg 12s ease infinite; /* Warna biru lebih gelap saat hover */
+}
+
+button:focus {
+    outline: none; /* Hilangkan garis fokus default */
+}
+
+/* Error Styling */
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Jika Input Error */
+.input-error {
+    border: 1px solid red;
+}
